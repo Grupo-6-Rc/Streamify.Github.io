@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Streamify+ - Pagina de Suscripción">
+  <meta name="keywords" content="streamify, servicio, streaming, metodo de pago">
+  <meta name="author" content="Nicolas Herrera">
+  <title>Suscripción - Método de pago - Anual</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark fixed-top">
+      <div class="container">
+        <a id="logo" class="navbar-brand fs-2" href="../../index.html">Streamify+</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../categoria.html">Categorías</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./suscripcion.html">Suscripción</a>
+            </li>
+            <form class="d-flex me-2 mb-2 mb-lg-0" role="search">
+              <input class="form-control me-2 bg-white border-primary" type="search" placeholder="Buscar"
+                aria-label="Buscar">
+              <a class="btn btn-outline-primary" href="../error404.html"><i class="bi bi-search "></i></a>
+            </form>
+            <a class="btn btn-outline-primary fw-bold text-uppercase" href="../login.html">Iniciar Sesión</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="bg-body">
+    <section class="container p-5">
+      <div class="d-flex justify-content-between">
+        <h1 class="fs-4">Método de pago</h1>
+        <h2 class="fs-4">Paso 3 de 3</h2>
+      </div>
+      <hr>
+      <div class="mb-3">
+        <img src="../../img/visa-logo.png" alt="Logo Tarjeta Visa" class="img-fluid" width="30px">
+        <img src="../../img/mastercard.svg" alt="Logo Tarjeta Mastercard" class="img-fluid" width="30px">
+      </div>
+      <form class="text-secondary" action="../error404.html" class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" pattern="[a-zA-Z ]{2,50}" title="Debes ingresar el nombre que figura en la tarjeta" id="floatingNombreCompleto" placeholder="Nombre en la tarjeta"
+                minlength="5" maxlength="50" required>
+              <label for="floatingNombreCompleto">Nombre en la tarjeta</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" inputmode="numeric" class="form-control" id="floatingNumeroTarjeta" placeholder="Número de la tarjeta"
+              pattern="[0-9]{16}"
+              title="Debes ingresar exactamente 16 números." required>
+              <label for="floatingNumeroTarjeta">Número de la tarjeta</label>
+            </div>
+            <div class="row">
+              <div class="form-floating mb-3 col-lg-4">
+                <input type="number" class="form-control" id="floatingMesVencimiento" placeholder="Mes de vencimiento"
+                   min="1" max="12" required>
+                <label for="floatingMesVencimiento" class="mx-2">MM</label>
+              </div>
+              <div class="form-floating mb-3 col-lg-4">
+                <input type="number" class="form-control" id="floatingAñoVencimiento" placeholder="Año de vencimiento"
+                   min="2023" max="2033" required>
+                <label for="floatingAñoVencimiento" class="mx-2">YYYY</label>
+              </div>
+              <div class="form-floating mb-3 col-lg-4">
+                <input type="text" inputmode="numeric" class="form-control" id="floatingFechaVencimiento"
+                  placeholder="Código de seguridad" pattern="[0-9]{3}" title="Debes ingresar exactamente 3 números." required>
+                <label for="floatingFechaVencimiento" class="mx-2">CVV</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Tu plan</h5>
+                <p class="card-text">
+                  Streamify+ básico <strong>$121,81 ARS/Mes</strong>
+                </p>
+                <p class="card-text">Revisar orden <strong>7 Días Gratis</strong> </p>
+                <hr>
+                <p>Total de hoy: <span class="strong">$0,00 ARS</span></p>
+                <p class="fw-bold">Cancele antes de la finalización del periodo de prueba para evitar cargos. Pueden
+                  aplicarse impuestos.</p>
+              </div>
+            </div>
+          </div>
+          <p class="mb-3"><small>Presionando "Aceptar y Continuar", usted confirma que ha leído y esta de acuerdo con
+              los
+              <a href="../error404.html" class="link-primary">Términos de
+                Uso</a> y acepta
+              nuestra <a href="../error404.html" class="link-primary">Política de Privacidad.</a>
+            </small></p>
+          <div class="text-center">
+            <button class="btn btn-primary rounded-0 px-4 py-2">ACEPTAR Y CONTINUAR</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="bg-black container text-bg-dark py-3">
+    <div class="row">
+      <div class="col-12 pb-3">
+        <a id="logo" class="navbar-brand fs-2 " href="../../index.html">Streamify+</a>
+      </div>
+      <aside class="col-sm-12 col-md-4">
+        <h6>Navegación por el sitio</h6>
+        <ul class="list-unstyled">
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="/pages/categoria.html">Categoría</a></li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+            <li><a href="/pages/suscripcion/suscripcion.html">Suscripción</a></li>
+        </ul>
+      </aside>
+      <aside class="col-sm-12 col-md-4">
+        <h6>Privacidad y términos</h6>
+        <ul class="list-unstyled">
+            <li><a href="/pages/acercadenosotros.html">Acerca de Nosotros</a></li>
+            <li><a href="/pages/error404.html">Acuerdo de Suscripción</a></li>
+            <li><a href="/pages/error404.html">Términos de Uso</a></li>
+            <li><a href="/pages/error404.html">Política de Privacidad</a></li>
+        </ul>
+      </aside>
+      <aside class="col-sm-12 col-md-4">
+        <h6>Soporte</h6>
+        <ul class="list-unstyled">
+          <li><a href="/pages/contacto.html">Ayuda / Contáctanos</a></li>
+          <li><a href="/pages/error404.html">Guia de Clasificaciones</a></li>
+          <a href="/pages/error404.html"><i class="bi bi-facebook text-primary me-2 fs-4"></i>
+          </a>
+          <a href="/pages/error404.html"><i class="bi bi-whatsapp text-primary me-2 fs-4""></i>
+          </a>
+          <a href="/pages/error404.html"><i class="bi bi-instagram text-primary fs-4""></i>
+          </a>
+        </ul>
+      </aside>
+      <div class="col-sm-12 text-sm-center">
+        <p class="text-center fs-6">&copy; 2023 Streamify+. Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

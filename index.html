@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Streamify+ - Pagina de Inicio" />
+  <meta name="keywords" content="html, css, rolling, servicio, streaming, streamify+, practica" />
+  <meta name="authors" content="Federico Rueda Leal - Nicolas Herrera" />
+  <title>Streamify+</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark fixed-top">
+      <div class="container">
+        <a id="logo" class="navbar-brand fs-2" href="index.html">Streamify+</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./pages/categoria.html">Categorías</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/suscripcion/suscripcion.html">Suscripción</a>
+            </li>
+            <form class="d-flex me-2 mb-2 mb-lg-0" role="search">
+              <input class="form-control me-2 bg-white border-primary" type="search" placeholder="Buscar"
+                aria-label="Buscar">
+              <a class="btn btn-outline-primary" href="./pages/error404.html"><i class="bi bi-search "></i></a>
+            </form>
+            <a class="btn btn-outline-primary fw-bold text-uppercase" href="./pages/login.html">Iniciar
+              Sesión</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section
+      class="container-fluid hero-container vh-100 d-flex flex-column align-items-center align-items-lg-start justify-content-center p-lg-5">
+      <h1 class="text-uppercase text-white fw-bold mb-3 heading-text">Historias únicas</h1>
+      <a class="btn btn-primary fw-bold text-uppercase mb-3" href="./pages/suscripcion/suscripcion.html"
+        role="button">Suscríbete a Streamify+</a>
+      <a class="btn btn-outline-light fw-bold text-uppercase" href="./pages/login.html">Iniciar Sesión</a>
+    </section>
+    <section class="container-fluid bg-gradient-container py-3">
+      <article class="py-lg-3">
+        <h2 class="text-white text-uppercase text-center fw-bold">Disfrutá de las mejores películas y series.</h2>
+        <p class="text-center text-white lead">Todo en un solo lugar. Sin limites.</p>
+      </article>
+      <article>
+        <h3 class="text-white">+Recomendadas</h3>
+      </article>
+      <article class="d-none d-lg-flex top-recommended p-3">
+        <a href="./pages/topgunPelicula.html"><img src="./img/top-gun-mobile-poster.jpg" class="img-fluid"
+            alt="Top Gun - Maverick"></a>
+        <a href="./pages/anabellPelicula.html"><img src="./img/subpage_anabelle.jpg" class="img-fluid"
+            alt="Anabelle - Vuelve a casa"></a>
+        <a href="./pages/simpsonsSerie.html"><img src="./img/simpsons-poster-mobile.jpg" class="img-fluid"
+            alt="Los Simpsons"></a>
+        <a href="./pages/error404.html"><img src="./img/tulsa-king-poster.jpg" class="img-fluid" alt="Tulsa King"></a>
+        <a href="./pages/error404.html"><img src="./img/yellowstone-mobile-poster.jpg" class="img-fluid"
+            alt="Yellowstone"></a>
+      </article>
+      <!-- Carousel mobile -->
+      <article class="d-lg-none">
+        <!-- Carusel de a 1 -->
+        <div class="container-fluid text-center d-sm-block d-md-none">
+          <div id="carouselPeliculaChica" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="ocultar" id="carouselChico">
+                <div class="carousel-item active">
+                  <a href="./pages/topgunPelicula.html"><img src="./img/top-gun-mobile-poster.jpg"
+                      alt="Top Gun - Maverick" height="300px" width="210px"></a>
+                </div>
+                <div class="carousel-item ">
+                  <a href="./pages/simpsonsSerie.html"><img src="./img/simpsons-poster-mobile.jpg" alt="Los Simpsons"
+                      height="300px" width="210px"></a>
+                </div>
+                <div class="carousel-item ">
+                  <a href="./pages/anabellPelicula.html"><img src="./img/subpage_anabelle.jpg"
+                      alt="Anabelle - Vuelve a casa" height="300px" width="210px"></a>
+                </div>
+                <div class="carousel-item ">
+                  <a href="./pages/error404.html"><img src="./img/tulsa-king-poster.jpg" alt="Tulsa King" height="300px"
+                      width="210px"></a>
+                </div>
+                <div class="carousel-item ">
+                  <a href="./pages/error404.html"><img src="./img/yellowstone-mobile-poster.jpg" alt="Yellowstone"
+                      height="300px" width="210px"></a>
+                </div>
+                <div class="carousel-item ">
+                  <a href="./pages/error404.html"><img src="/img/proyectoadam.jpg" alt="Proyecto Adam" height="300px"
+                      width="210px"></a>
+                </div>
+                <div class="carousel-item ">
+                  <a href="./pages/error404.html"><img src="../img/descarga (4).jfif" alt="Banner de sugerencia 6"
+                      height="300px" width="210px"></a>
+                </div>
+                <div class="carousel-item "><a href="./pages/error404.html"><img src="../img/images (1).jfif"
+                      alt="Banner de sugerencia 1" height="300px" width="210px"></a></div>
+                <div class="carousel-item "><a href="./pages/error404.html"><img src="../img/8897-no-respires-2.jpg"
+                      alt="Banner de sugerencia 2" height="300px" width="210px"></a></div>
+                <div class="carousel-item "><a href="./pages/error404.html"><img src="../img/shazam_3zz1.jpg"
+                      alt="Banner de sugerencia 3" height="300px" width="210px"></a></div>
+                <div class="carousel-item "><a href="./pages/error404.html"><img src="../img/scream-5.jfif"
+                      alt="Banner de sugerencia 4" height="300px" width="210px"></a></div>
+                <div class="carousel-item "><a href="./pages/error404.html"><img
+                      src="../img/EN-US_MDV1_Main_Vertical_27x40_RGB_PRE-1.webp" alt="Banner de sugerencia 5"
+                      height="300px" width="210px"></a></div>
+                <div class="carousel-item "><a href="./pages/error404.html"><img src="../img/232301.jpg"
+                      alt="Banner de sugerencia 6" height="300px" width="210px"></a></div>
+                <div class="carousel-item "><a href="./pages/error404.html"><img src="../img/63b71a407109e_720_960!.png"
+                      alt="Banner de sugerencia 7" height="300px" width="210px"></a></div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPeliculaChica"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPeliculaChica"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- Carusel de a 3 -->
+        <div class="container-fluid text-center d-none d-md-block d-lg-none">
+          <div id="carouselPeliculaMediana" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="ocultar" id="carouselMediano">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col">
+                      <a href="./pages/topgunPelicula.html"><img src="./img/top-gun-mobile-poster.jpg"
+                          alt="Top Gun - Maverick" height="300px" width="210px"></a>
+                      <a href="./pages/anabellPelicula.html"><img src="./img/subpage_anabelle.jpg"
+                          alt="Anabelle - Vuelve a casa" height="300px" width="210px"></a>
+                      <a href="./pages/anabellPelicula.html"><img src="./img/simpsons-poster-mobile.jpg"
+                          alt="Los Simpsons" height="300px" width="210px"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="row">
+                    <div class="col">
+                      <a href="./pages/error404.html"><img src="./img/tulsa-king-poster.jpg" alt="Tulsa King"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/yellowstone-mobile-poster.jpg" alt="Yellowstone"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/proyectoadam.jpg" alt="Proyecto Adam"
+                          height="300px" width="210px"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="row">
+                    <div class="col">
+                      <a href="./pages/error404.html"><img src="../img/images (1).jfif" alt="Banner de sugerencia 1"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="../img/8897-no-respires-2.jpg"
+                          alt="Banner de sugerencia 2" height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="../img/shazam_3zz1.jpg" alt="Banner de sugerencia 3"
+                          height="300px" width="210px"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="row">
+                    <div class="col">
+                      <a href="./pages/error404.html"><img src="../img/scream-5.jfif" alt="Banner de sugerencia 4"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="../img/EN-US_MDV1_Main_Vertical_27x40_RGB_PRE-1.webp"
+                          alt="Banner de sugerencia 5" height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="../img/232301.jpg" alt="Banner de sugerencia 6"
+                          height="300px" width="210px"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPeliculaMediana"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPeliculaMediana"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="container-fluid bg-black p-lg-5 pb-3">
+      <article class="pb-3">
+        <h2 class="text-white text-center text-uppercase fw-bold ">Elegí tu plan</h2>
+        <p class="lead text-white text-center">Probá nuestro servicio por 7 días gratis.</p>
+      </article>
+      <article class="row row-cols-1 row-cols-md-3 mb-lg-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal text-uppercase">Básico</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$121.81 ARS<small class="text-muted fw-light">/mes</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <i class="bi bi-check2 text-primary fs-2"></i>
+                <li>¡Ve películas y series de Streamify+, Nickelodeon, MTV y más!</li>
+                <i class="bi bi-x text-danger fs-2"></i>
+                <li> Continúa viendo donde lo dejaste en cualquier dispositivo </li>
+                <i class="bi bi-x text-danger fs-2"></i>
+                <li>Descarga contenidos y míralos sin conexión a Internet</li>
+              </ul>
+              <a href="./pages/suscripcion/suscripcion.html"
+                class="w-100 btn btn-lg btn-primary text-uppercase">Suscríbete</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal text-uppercase">Intermedio</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$181.21 ARS<small class="text-muted fw-light">/mes</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <i class="bi bi-check2 text-primary fs-2"></i>
+                <li>¡Ve películas y series de Streamify+, Nickelodeon, MTV y más!</li>
+                <i class="bi bi-check2 text-primary fs-2"></i>
+                <li> Continúa viendo donde lo dejaste en cualquier dispositivo </li>
+                <i class="bi bi-x text-danger fs-2"></i>
+                <li>Descarga contenidos y míralos sin conexión a Internet</li>
+              </ul>
+              <a href="./pages/suscripcion/suscripcion.html"
+                class="w-100 btn btn-lg btn-primary text-uppercase">Suscríbete</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal text-uppercase">Premium</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$1812.10 ARS<small class="text-muted fw-light">/año</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <i class="bi bi-check2 text-primary fs-2"></i>
+                <li>¡Ve películas y series de Streamify+, Nickelodeon, MTV y más!</li>
+                <i class="bi bi-check2 text-primary fs-2"></i>
+                <li> Continúa viendo donde lo dejaste en cualquier dispositivo </li>
+                <i class="bi bi-check2 text-primary fs-2"></i>
+                <li>Descarga contenidos y míralos sin conexión a Internet</li>
+              </ul>
+              <a href="./pages/suscripcion/suscripcion.html"
+                class="w-100 btn btn-lg btn-primary text-uppercase">Suscríbete</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="container-fluid bg-gradient-container pb-5">
+      <article>
+        <h2 class="text-center text-white text-uppercase fw-bold">Tenemos tu contenido favorito</h2>
+        <p class="lead text-white text-center">Cuando quieras, donde quieras.</p>
+      </article>
+      <article>
+        <h3 class="text-white">+Sugeridas</h3>
+      </article>
+      <article class="container w-100 d-flex align-items-center justify-content-center pt-3 flex-column flex-lg-row">
+        <a class="bg-black text-uppercase text-white fw-bold display-1 p-3 m-2 w-100 text-center"
+          href="./pages/peliculasAccion.html">Acción</a>
+        <a class="bg-black text-uppercase text-primary fw-bold display-1 p-3 m-2 w-100 text-center"
+          href="./pages/peliculasTerror.html">Terror</a>
+        <a class="bg-black text-uppercase text-white fw-bold display-1 p-3 m-2 w-100 text-center"
+          href="./pages/serieComedia.html">Comedia</a>
+      </article>
+      <article class="d-none d-lg-block">
+        <!-- Carrusel de a 1 -->
+        <div class="container-fluid text-center d-none">
+          <div id="carouselCategoriaChica" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="ocultar" id="carouselChico">
+                <div class="carousel-item active">
+                  <a href="./pages/topgunPelicula.html"><img src="/img/top-gun-mobile-poster.jpg"
+                      alt="Top Gun - Maverick" height="300px" width="210px"></a>
+                </div>
+                <div class="carousel-item ">
+                  <a href="./pages/simpsonsSerie.html"><img src="/img/simpsons-poster-mobile.jpg" alt="Los Simpsons"
+                      height="300px" width="210px"></a>
+                </div>
+                <div class="carousel-item ">
+                  <a href="./pages/anabellPelicula.html"><img src="/img/subpage_anabelle.jpg"
+                      alt="Anabelle - Vuelve a casa" height="300px" width="210px"></a>
+                </div>
+                <div class="carousel-item ">
+                  <a href="./pages/error404.html"><img src="./img/tulsa-king-poster.jpg" alt="Tulsa King" height="300px"
+                      width="210px"></a>
+                </div>
+                <div class="carousel-item ">
+                  <a href="./pages/error404.html"><img src="/img/yellowstone-mobile-poster.jpg" alt="Yellowstone"
+                      height="300px" width="210px"></a>
+                </div>
+                <div class="carousel-item ">
+                  <a href="./pages/error404.html"><img src="/img/proyectoadam.jpg" alt="Proyecto Adam" height="300px"
+                      width="210px"></a>
+                </div>
+                <div class="carousel-item ">
+                  <a href="./pages/error404.html"><img src="../img/descarga (4).jfif" alt="Banner de sugerencia 6"
+                      height="300px" width="210px"></a>
+                </div>
+                <div class="carousel-item "><a href="./pages/error404.html"><img src="../img/images (1).jfif"
+                      alt="Banner de sugerencia 1" height="300px" width="210px"></a></div>
+                <div class="carousel-item "><a href="./pages/error404.html"><img src="../img/8897-no-respires-2.jpg"
+                      alt="Banner de sugerencia 2" height="300px" width="210px"></a></div>
+                <div class="carousel-item "><a href="./pages/error404.html"><img src="../img/shazam_3zz1.jpg"
+                      alt="Banner de sugerencia 3" height="300px" width="210px"></a></div>
+                <div class="carousel-item "><a href="./pages/error404.html"><img src="../img/scream-5.jfif"
+                      alt="Banner de sugerencia 4" height="300px" width="210px"></a></div>
+                <div class="carousel-item "><a href="./pages/error404.html"><img
+                      src="../img/EN-US_MDV1_Main_Vertical_27x40_RGB_PRE-1.webp" alt="Banner de sugerencia 5"
+                      height="300px" width="210px"></a></div>
+                <div class="carousel-item "><a href="./pages/error404.html"><img src="../img/232301.jpg"
+                      alt="Banner de sugerencia 6" height="300px" width="210px"></a></div>
+                <div class="carousel-item "><a href="./pages/error404.html"><img src="../img/63b71a407109e_720_960!.png"
+                      alt="Banner de sugerencia 7" height="300px" width="210px"></a></div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCategoriaChica"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCategoriaChica"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- Carrusel de a 3 -->
+        <div class="container-fluid text-center d-none">
+          <div id="carouselCategoriaMediana" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="ocultar" id="carouselMediano">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col">
+                      <a href="./pages/topgunPelicula.html"><img src="/img/top-gun-mobile-poster.jpg"
+                          alt="Top Gun - Maverick" height="300px" width="210px"></a>
+                      <a href="./pages/anabellPelicula.html"><img src="/img/subpage_anabelle.jpg"
+                          alt="Anabelle - Vuelve a casa" height="300px" width="210px"></a>
+                      <a href="./pages/simpsonsSerie.html"><img src="/img/simpsons-poster-mobile.jpg" alt="Los Simpsons"
+                          height="300px" width="210px"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="row">
+                    <div class="col">
+                      <a href="./pages/error404.html"><img src="/img/tulsa-king-poster.jpg" alt="Tulsa King"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="/img/yellowstone-mobile-poster.jpg" alt="Yellowstone"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="/img/proyectoadam.jpg" alt="Proyecto Adam"
+                          height="300px" width="210px"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="row">
+                    <div class="col">
+                      <a href="./pages/error404.html"><img src="../img/images (1).jfif" alt="Banner de sugerencia 1"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="../img/8897-no-respires-2.jpg"
+                          alt="Banner de sugerencia 2" height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="../img/shazam_3zz1.jpg" alt="Banner de sugerencia 3"
+                          height="300px" width="210px"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="row">
+                    <div class="col">
+                      <a href="./pages/error404.html"><img src="../img/scream-5.jfif" alt="Banner de sugerencia 4"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="../img/EN-US_MDV1_Main_Vertical_27x40_RGB_PRE-1.webp"
+                          alt="Banner de sugerencia 5" height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="../img/232301.jpg" alt="Banner de sugerencia 6"
+                          height="300px" width="210px"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCategoriaMediana"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCategoriaMediana"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- Carrusel de a 4 -->
+        <div class="container-fluid text-center d-none d-lg-block carouselGrandeDeCuatro">
+          <div id="carouselDeCuatro" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="ocultar" id="carouselDeCuatroImagenes">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col">
+                      <a href="./pages/error404.html"><img src="./img/62f3fe997859118340133ec2a.jpg"
+                          alt="Banner de sugerencia 2" height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/descarga (2).jfif" alt="Banner de sugerencia 3"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/descarga (7).jfif" alt="Banner de sugerencia 4"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img
+                          src="./img/poster-the-adam-project-www.culturageek.com_.ar_.jpg" alt="Banner de sugerencia 5"
+                          height="300px" width="210px"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row ">
+                    <div class="col">
+                      <a href="./pages/error404.html"><img src="./img/El_hombre_del_norte-838738443-large.jpg"
+                          alt="Banner de sugerencia" height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/descarga (4).jfif" alt="Banner de sugerencia 6"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/8897-no-respires-2.jpg"
+                          alt="Banner de sugerencia 2" height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/shazam_3zz1.jpg" alt="Banner de sugerencia 3"
+                          height="300px" width="210px"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row ">
+                    <div class="col">
+                      <a href="./pages/error404.html"><img src="./img/scream-5.jfif" alt="Banner de sugerencia 4"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/EN-US_MDV1_Main_Vertical_27x40_RGB_PRE-1.webp"
+                          alt="Banner de sugerencia 5" height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/232301.jpg" alt="Banner de sugerencia 6"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/63b71a407109e_720_960!.png"
+                          alt="Banner de sugerencia 7" height="300px" width="210px"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDeCuatro"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDeCuatro"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- Carrusel de a 6 -->
+        <div class="container-fluid text-center d-none d-lg-block carouselGrande">
+          <div id="carouselCategoriaGrande" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="ocultar" id="carouselGrande">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col">
+                      <a href="./pages/error404.html"><img src="./img/62f3fe997859118340133ec2a.jpg"
+                          alt="Banner de sugerencia 2" height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/descarga (2).jfif" alt="Banner de sugerencia 3"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/descarga (7).jfif" alt="Banner de sugerencia 4"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img
+                          src="./img/poster-the-adam-project-www.culturageek.com_.ar_.jpg" alt="Banner de sugerencia 5"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/El_hombre_del_norte-838738443-large.jpg"
+                          alt="Banner de sugerencia" height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/descarga (4).jfif" alt="Banner de sugerencia 6"
+                          height="300px" width="210px"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row ">
+                    <div class="col">
+                      <a href="./pages/error404.html"><img src="./img/8897-no-respires-2.jpg"
+                          alt="Banner de sugerencia 2" height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/shazam_3zz1.jpg" alt="Banner de sugerencia 3"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/scream-5.jfif" alt="Banner de sugerencia 4"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/EN-US_MDV1_Main_Vertical_27x40_RGB_PRE-1.webp"
+                          alt="Banner de sugerencia 5" height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/232301.jpg" alt="Banner de sugerencia 6"
+                          height="300px" width="210px"></a>
+                      <a href="./pages/error404.html"><img src="./img/63b71a407109e_720_960!.png"
+                          alt="Banner de sugerencia 7" height="300px" width="210px"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCategoriaGrande"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCategoriaGrande"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="container w-100 d-flex align-items-center justify-content-center pb-3 flex-column flex-lg-row">
+        <a class="bg-black text-uppercase text-white fw-bold display-1 p-3 m-2 w-100 text-center text-md-primary"
+          href="./pages/error404.html">Drama</a>
+        <a class="bg-black text-uppercase text-primary fw-bold display-1 p-3 m-2 w-100 text-center text-md-white"
+          href="./pages/error404.html">Aventura</a>
+      </article>
+    </section>
+
+    <section class="container-fluid bg-black border-top border-bottom border-primary py-lg-5 py-3">
+      <h2 class="text-white text-center text-uppercase fw-bold pb-3">Preguntas frecuentes</h2>
+      <article class="accordion container" id="accordionPreguntasFrecuentes">
+        <div class="accordion-item border-0 mb-2">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button accordion-button-styled collapsed text-primary text" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              ¿Qué es Streamify+?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse bg" aria-labelledby="headingOne"
+            data-bs-parent="#accordionPreguntasFrecuentes">
+            <div class="accordion-body accordion-body-styled">
+              <p><strong>Streamify+</strong> es un servicio de streaming que ofrece una gran variedad de
+                películas,
+                series y documentales
+                premiados en casi
+                cualquier pantalla conectada a internet.</p>
+              <p>Todo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible. Siempre hay algo
+                nuevo
+                por
+                descubrir, ¡y
+                todas las semanas se agregan más películas y series!</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item border-0 mb-2">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button accordion-button-styled collapsed text-primary" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              ¿Cuánto cuesta Streamify+?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse bg" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionPreguntasFrecuentes">
+            <div class="accordion-body accordion-body-styled">
+              <p>Disfruta <strong>Streamify+</strong> en tu smartphone, tablet, smart TV, laptop o dispositivo de
+                streaming, todo por una tarifa plana
+                mensual. Planes desde $181,21 ARS (sin impuestos incluidos). Sin costos adicionales ni contratos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item border-0 mb-2">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button accordion-button-styled collapsed text-primary" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+              aria-controls="collapseThree">
+              ¿Dónde puedo ver Streamify+?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse bg" aria-labelledby="headingThree"
+            data-bs-parent="#accordionPreguntasFrecuentes">
+            <div class="accordion-body accordion-body-styled">
+              <p>Disfruta donde quieras, cuando quieras. Inicia sesión en tu cuenta de <strong>Streamify+</strong>
+                para
+                ver contenido al instante a través de
+                tu computadora personal o en cualquier dispositivo con conexión a internet que cuente con la app
+                de
+                <strong>Streamify+</strong>, como smart TV, smartphones, tablets reproductores multimedia y
+                consolas de
+                juegos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item border-0 mb-2">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button accordion-button-styled collapsed text-primary" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+              aria-controls="collapseFour">
+              ¿Cómo cancelo?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse bg" aria-labelledby="headingFour"
+            data-bs-parent="#accordionPreguntasFrecuentes">
+            <div class="accordion-body accordion-body-styled">
+              <p><strong>Streamify+</strong> es flexible. Sin contratos molestos ni compromisos. Cancela la
+                membresía
+                online con
+                solo dos clics. No hay cargos por
+                cancelación. Empieza y termina cuando quieras.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item border-0 mb-2">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button accordion-button-styled collapsed text-primary" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+              aria-controls="collapseFive">
+              ¿Qué puedo ver en Streamify+?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse bg" aria-labelledby="headingFive"
+            data-bs-parent="#accordionPreguntasFrecuentes">
+            <div class="accordion-body accordion-body-styled">
+              <p><strong>Streamify+</strong> tiene un amplio catálogo de películas, series, documentales, animes,
+                originales
+                premiados y más. Todo lo que quieras
+                ver, cuando quieras.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item border-0">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button accordion-button-styled collapsed text-primary" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              ¿Es bueno Streamify+ para los niños?
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse bg" aria-labelledby="headingSix"
+            data-bs-parent="#accordionPreguntasFrecuentes">
+            <div class="accordion-body accordion-body-styled">
+              <p>La experiencia de <strong>Streamify+</strong> para niños está incluida en la membresía para que
+                los
+                padres tengan el control mientras los peques disfrutan series y
+                películas familiares en su propio espacio.
+              </p>
+              <p>Los perfiles para niños incluyen controles parentales protegidos por PIN que te permiten
+                restringir el
+                contenido que
+                pueden ver los niños en función de la clasificación por edad y bloquear determinados títulos que
+                no
+                quieras que los
+                niños vean.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+  </main>
+  <footer class="bg-black container text-bg-dark py-3">
+    <div class="row">
+      <div class="col-12 pb-3">
+        <a id="logo" class="navbar-brand fs-2 " href="index.html">Streamify+</a>
+      </div>
+      <aside class="col-sm-12 col-md-4">
+        <h6>Navegación por el sitio</h6>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="./pages/categoria.html">Categoría</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li><a href="./pages/suscripcion/suscripcion.html">Suscripción</a></li>
+        </ul>
+      </aside>
+      <aside class="col-sm-12 col-md-4">
+        <h6>Privacidad y términos</h6>
+        <ul class="list-unstyled">
+          <li><a href="./pages/acercadenosotros.html">Acerca de Nosotros</a></li>
+          <li><a href="./pages/error404.html">Acuerdo de Suscripción</a></li>
+          <li><a href="./pages/error404.html">Términos de Uso</a></li>
+          <li><a href="./pages/error404.html">Política de Privacidad</a></li>
+        </ul>
+      </aside>
+      <aside class="col-sm-12 col-md-4">
+        <h6>Soporte</h6>
+        <ul class="list-unstyled">
+          <li><a href="./pages/contacto.html">Ayuda / Contáctanos</a></li>
+          <li><a href="./pages/error404.html">Guia de Clasificaciones</a></li>
+          <a href="./pages/error404.html"><i class="bi bi-facebook text-primary me-2 fs-4"></i>
+          </a>
+          <a href="./pages/error404.html"><i class="bi bi-whatsapp text-primary me-2 fs-4""></i>
+          </a>
+          <a href=" ./pages/error404.html"><i class="bi bi-instagram text-primary fs-4""></i>
+          </a>
+        </ul>
+      </aside>
+      <div class=" col-sm-12 text-sm-center">
+                <p class="text-center fs-6">&copy; 2023 Streamify+. Todos los derechos reservados</p>
+    </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
